@@ -43,14 +43,14 @@ The site deploys automatically to GitHub Pages on push to `main` via the workflo
    | A     | @    | 185.199.109.153        |
    | A     | @    | 185.199.110.153        |
    | A     | @    | 185.199.111.153        |
-   | CNAME | www  | adamchesney.github.io  |
+   | CNAME | www  | tigz.github.io  |
 
 4. Wait for DNS propagation (up to 24 hours)
 5. Enable "Enforce HTTPS" once the certificate is provisioned
 
 ### Mapping Sibling Apps to tigz.me
 
-The sibling apps (avatarz, foosbournament) are currently at `adamchesney.com/avatarz` and `adamchesney.com/foosbournament`. To move them to `tigz.me`:
+The sibling apps (avatarz, foosbournament) can be deployed to `tigz.me`:
 
 #### Option A: Subdirectories (Recommended)
 
@@ -77,8 +77,8 @@ Use `avatarz.tigz.me` and `foosbournament.tigz.me`:
 
    | Type  | Name           | Value                  |
    |-------|----------------|------------------------|
-   | CNAME | avatarz        | adamchesney.github.io  |
-   | CNAME | foosbournament | adamchesney.github.io  |
+   | CNAME | avatarz        | tigz.github.io  |
+   | CNAME | foosbournament | tigz.github.io  |
 
 4. Update each app's build config for the root path (no subdirectory needed)
 5. Enable HTTPS for each subdomain
